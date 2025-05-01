@@ -1,14 +1,11 @@
-Formulera user stories för den funktionalitet som finns på webbsidan idag. Skriv ner
-dessa i STORIES.md
 
-
-A. Det finns user stories som täcker all funktionalitet.
-
-B. Alla user stories har minst en feature. Alla features har minst ett scenario.
-
+5. Bygg step-filer för alla features. Page-filer vid behov.
+6. Skriv ner 1) vad du har testat, och 2) hur man startar projektet, i README.md. Nu
+kan du lämna in
+7. 
 C. Det går att starta ditt projekt, efter instruktionerna du har skrivit i README.md.
-
 D. Alla test är gröna.
+
 
 ## User Story 1
 **Som användare vill jag kunna se alla böcker när jag har tryckt på knappen "Katalog".**
