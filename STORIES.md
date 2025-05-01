@@ -1,12 +1,3 @@
-
-5. Bygg step-filer för alla features. Page-filer vid behov.
-6. Skriv ner 1) vad du har testat, och 2) hur man startar projektet, i README.md. Nu
-kan du lämna in
-7. 
-C. Det går att starta ditt projekt, efter instruktionerna du har skrivit i README.md.
-D. Alla test är gröna.
-
-
 ## User Story 1
 **Som användare vill jag kunna se alla böcker när jag har tryckt på knappen "Katalog".**
 
@@ -42,7 +33,7 @@ D. Alla test är gröna.
 
 **[A4]** Om man inte har angivit tecken i fälten "Titel" och "Författare" ska man inte kunna 
 trycka på knappen "Lägg till ny bok". Är fälten inte tomma kan man trycka på knappen. 
- 
+
 ---
 ## User Story 4
 **Som användare vill jag kunna se alla mina favoritböcker.**
@@ -52,4 +43,3 @@ trycka på knappen "Lägg till ny bok". Är fälten inte tomma kan man trycka p�
 **[A1]** Det ska gå att klicka på knappen "Mina böcker".
 
 **[A2]** Alla böcker som är favoritmarkerade ska visas när man har tryckt på knappen "Mina böcker".
-

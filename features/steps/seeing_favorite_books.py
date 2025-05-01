@@ -3,7 +3,6 @@ from playwright.sync_api import expect
 
 @given('att användaren är på startsidan')
 def go_to_homepage(context):
-    # Setup görs i environment.py
     pass
 
 @given('har favoritmarkerat en bok')
@@ -11,14 +10,12 @@ def mark_book_as_favorite(context):
     page = context.page
     first_book = page.locator('div.catalog > div.book').first
     first_book.hover()
-    # Vänta på att hjärtikonen syns och klicka på den
     heart_icon = first_book.locator('[data-testid^="star-"][role="button"]')
     heart_icon.wait_for(state='visible', timeout=5000)
     heart_icon.click()
 
 @given('har inte favoritmarkerat en bok')
 def not_marking_book_as_favorite(context):
-    # Ingen åtgärd behövs, grundläge
     pass
 
 @when('användaren klickar på knappen "Mina böcker"')

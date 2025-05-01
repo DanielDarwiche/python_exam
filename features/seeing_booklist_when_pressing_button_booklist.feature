@@ -1,3 +1,4 @@
+@booklist
 Feature: Visa katalog
   Som användare vill jag kunna se alla böcker när jag har tryckt på knappen "Katalog".
 

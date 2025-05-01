@@ -1,3 +1,4 @@
+@addfavo
 Feature: Markera bok som favorit
   Som användare vill jag kunna markera en bok som favorit i katalogen.
 
