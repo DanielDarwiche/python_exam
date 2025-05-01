@@ -41,3 +41,10 @@ def step_then_button_enabled(context):
     page = context.page
     add_button = page.locator('div.form button[type="submit"]')
     expect(add_button).to_be_enabled()
+#
+# @and('ska boken med rätt Titel och Författare synas i katalogen')
+# def step_then_book_in_list(context):
+#     page = context.page
+#     # Anpassa selektorn nedan till hur din boklista renderas
+#     book_entry = page.locator('text=Pippi Långstrump').first
+#     expect(book_entry).to_be_visible()

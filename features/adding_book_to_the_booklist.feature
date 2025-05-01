@@ -1,5 +1,4 @@
 @addbook
-
 Feature: Lägga till bok i katalog
   Som användare vill jag kunna lägga till en bok i katalogen
 

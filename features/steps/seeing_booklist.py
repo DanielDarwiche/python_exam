@@ -19,3 +19,5 @@ def then_booklist_is_visible(context):
     page.wait_for_selector('div.catalog > div.book')
     books = page.locator('div.catalog > div.book')
     expect(books.first).to_be_visible()
+    book_count = books.count()
+    assert book_count > 0

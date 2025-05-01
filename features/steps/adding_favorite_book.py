@@ -2,11 +2,11 @@ from behave import given, when, then
 from playwright.sync_api import expect
 
 @given('att användaren ser bokkatalogen')
-def step_given_user_sees_catalog(context):
+def given_user_sees_catalog(context):
     context.page.goto("https://tap-ht24-testverktyg.github.io/exam-template/")
 
 @when('användaren hovrar över en bok')
-def step_when_hover_over_book(context):
+def when_hover_over_book(context):
     page = context.page
     first_book = page.locator('div.catalog > div.book').first
     first_book.hover()
@@ -14,7 +14,7 @@ def step_when_hover_over_book(context):
     expect(first_book).to_be_visible()
 
 @given('en hjärtsymbol visas på en bok')
-def step_given_heart_icon_visible(context):
+def given_heart_icon_visible(context):
     page = context.page
     first_book = page.locator('div.catalog > div.book').first
     first_book.hover()
@@ -24,23 +24,23 @@ def step_given_heart_icon_visible(context):
     context.heart_icon = heart_icon
 
 @then('ska en hjärtsymbol visas på boken')
-def step_then_heart_icon_visible(context):
+def then_heart_icon_visible(context):
     heart_icon = context.first_book.locator('[data-testid^="star-"][role="button"]')
     expect(heart_icon).to_be_visible()
     context.heart_icon = heart_icon
 
 @when('användaren klickar på hjärtsymbolen')
-def step_click_heart_icon(context):
+def click_heart_icon(context):
     context.heart_icon.click()
 
 @when('användaren klickar på "Mina böcker"')
-def step_click_mina_bocker(context):
+def click_mina_bocker(context):
     page = context.page
     favorite_books_button = page.get_by_role("button", name="Mina böcker")
     favorite_books_button.click()
 
 @then('ska den markerade boken visas i listan över favoritböcker')
-def step_favorite_book_visible(context):
+def favorite_book_visible(context):
     page = context.page
     page.wait_for_selector('ol > li')
     favorite_book = page.locator('ol > li').first
