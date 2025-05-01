@@ -1,6 +1,6 @@
 @addbook
 Feature: Lägga till bok i katalog
-  Som användare vill jag kunna lägga till en bok i katalogen
+  Som användare vill jag kunna lägga till en bok i katalogen.
 
   Scenario: Användaren kan inte lägga till en bok med Författare och utan Titel
     Given att användaren är på rätt sida
